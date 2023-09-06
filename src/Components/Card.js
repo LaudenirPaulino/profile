@@ -7,6 +7,13 @@ import mail from '../assets/images/mail.png';
 import cv from '../assets/images/curriculum-vitae.png';
 
 export default function Card() {
+    const [botaoAtivo, setBotaoAtivo] = useState(false);
+    const [ulKey, setUlKey] = useState(0); // Adicione o estado para a chave única do <ul>
+
+    const alternarBotao = () => {
+        setBotaoAtivo(!botaoAtivo);
+        setUlKey(ulKey + 1); // Atualize a chave única do <ul> para reiniciar
+    };
     const content = [
         [
             "Engenheiro mecânico com 4 anos de experiência na área, com foco em liderança, gestão de pessoas e controle de KPIs. Também possui experiência em desenhos técnico mecânicos, controle de estoque e matérias de manutenção, planejamento de manutenção e orçamentos, inspeção e análise de causa de defeitos."
@@ -36,7 +43,7 @@ export default function Card() {
                 </div>
                 <div className="icones-div">
                     <div className="icones-esq">
-                        <a href="https://wa.me/55199981228668" target="_blank">
+                        <a href="https://wa.me/5519998122868" target="_blank">
                             <img className="icones" src={whats} alt="WhatsApp Icon" />
                         </a>
                         <a href="https://www.linkedin.com/in/laudenir-paulino-b05b6b169/" target="_blank">
@@ -56,31 +63,31 @@ export default function Card() {
                     <menu>
                         <button
                             className={activeContentIndex === 0 ? "active" : ""}
-                            onClick={() => setActiveContentIndex(0)}
+                            onClick={() => { setActiveContentIndex(0); alternarBotao(); }}
                         >
                             Resumo
                         </button>
-                        <button
+                        <button id="xp"
                             className={activeContentIndex === 1 ? "active" : ""}
-                            onClick={() => setActiveContentIndex(1)}
+                            onClick={() => { setActiveContentIndex(1); alternarBotao(); }}
                         >
                             Experiência
                         </button>
                         <button
                             className={activeContentIndex === 2 ? "active" : ""}
-                            onClick={() => setActiveContentIndex(2)}
+                            onClick={() => { setActiveContentIndex(2); alternarBotao(); }}
                         >
                             Domínio
                         </button>
                         <button
                             className={activeContentIndex === 3 ? "active" : ""}
-                            onClick={() => setActiveContentIndex(3)}
+                            onClick={() => { setActiveContentIndex(3); alternarBotao(); }}
                         >
                             Objetivos
                         </button>
                     </menu>
                     <div className="tab-content">
-                        <ul>
+                        <ul key={ulKey} id="content">
                             {content[activeContentIndex].map((item) => (
                                 <li key={item}>{item}</li>
                             ))}

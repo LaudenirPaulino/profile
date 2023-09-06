@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cv/static/css/main.72ce4796.css",
-    "main.js": "/cv/static/js/main.eed3e65b.js",
-    "static/media/nyblacknwhite.jpg": "/cv/static/media/nyblacknwhite.392911b2c0cbbdf973d6.jpg",
-    "static/media/lau.jpg": "/cv/static/media/lau.431239bebb030ab4f4e8.jpg",
-    "static/media/whatsapp.png": "/cv/static/media/whatsapp.c0139bed7dc4beda41a1.png",
-    "static/media/engenharia-icon.png": "/cv/static/media/engenharia-icon.50c4fd68ab173f13dd11.png",
-    "index.html": "/cv/index.html",
-    "main.72ce4796.css.map": "/cv/static/css/main.72ce4796.css.map",
-    "main.eed3e65b.js.map": "/cv/static/js/main.eed3e65b.js.map"
+    "main.css": "/profile/static/css/main.e0ac7d70.css",
+    "main.js": "/profile/static/js/main.2da2eed4.js",
+    "static/media/nyblacknwhite.jpg": "/profile/static/media/nyblacknwhite.392911b2c0cbbdf973d6.jpg",
+    "static/media/lau.jpg": "/profile/static/media/lau.431239bebb030ab4f4e8.jpg",
+    "static/media/whatsapp.png": "/profile/static/media/whatsapp.c0139bed7dc4beda41a1.png",
+    "static/media/engenharia-icon.png": "/profile/static/media/engenharia-icon.50c4fd68ab173f13dd11.png",
+    "index.html": "/profile/index.html",
+    "main.e0ac7d70.css.map": "/profile/static/css/main.e0ac7d70.css.map",
+    "main.2da2eed4.js.map": "/profile/static/js/main.2da2eed4.js.map"
   },
   "entrypoints": [
-    "static/css/main.72ce4796.css",
-    "static/js/main.eed3e65b.js"
+    "static/css/main.e0ac7d70.css",
+    "static/js/main.2da2eed4.js"
   ]
 }
